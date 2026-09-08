@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EarnPro - SEO & Freelancing</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #000000;
+            color: #ffffff;
+        }
+
+        /* HEADER */
+        header {
+            background: #050505;
+            border-bottom: 1px solid #252525;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffd000;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd000;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+            background:
+                radial-gradient(circle at center, #292000 0%, #080808 45%, #000000 100%);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #ffd000;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.7;
+            color: #cccccc;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 16px 35px;
+            background: #ffd000;
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        /* SERVICES */
+        .services {
+            padding: 90px 7%;
+            background: #080808;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .section-title span {
+            color: #ffd000;
+        }
+
+        .section-text {
+            color: #aaaaaa;
+            margin-bottom: 50px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 220px;
+            min-height: 230px;
+            padding: 30px 20px;
+            background: #111111;
+            border: 1px solid #292929;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #ffd000;
+            transform: translateY(-8px);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #ffd000;
+            margin-bottom: 15px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #aaaaaa;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* CTA */
+        .cta {
+            padding: 90px 20px;
+            text-align: center;
+            background: #ffd000;
+            color: #000000;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            font-size: 18px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 35px;
+            background: #000000;
+            color: #ffd000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #050505;
+            text-align: center;
+            padding: 25px;
+            color: #888888;
+            border-top: 1px solid #222222;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        EarnPro
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Grow Your Business With
+            <span>EarnPro</span>
+        </h1>
+
+        <p>
+            Professional SEO, Fiverr & Upwork Freelancing,
+            Graphic Designing, Web Designing and Web Development
+            services to help you grow and succeed online.
+        </p>
+
+        <a href="#services" class="button">
+            Explore Services
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+    <h2 class="section-title">
+        Our <span>Services</span>
+    </h2>
+
+    <p class="section-text">
+        Professional digital services for your online success.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">🔍</div>
+
+            <h3>SEO Services</h3>
+
+            <p>
+                Improve your Google rankings, website traffic
+                and online visibility with professional SEO.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💼</div>
+
+            <h3>Fiverr & Upwork</h3>
+
+            <p>
+                Freelancing profile optimization, gig creation
+                and strategies for growing online.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🎨</div>
+
+            <h3>Graphic Designing</h3>
+
+            <p>
+                Professional logos, banners, social media
+                graphics and creative designs.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🌐</div>
+
+            <h3>Web Designing</h3>
+
+            <p>
+                Modern, attractive and responsive websites
+                designed for your business.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💻</div>
+
+            <h3>Web Development</h3>
+
+            <p>
+                Fast, responsive and functional websites
+                developed for your online business.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT CTA -->
+
+<section class="cta" id="contact">
+
+    <h2>Ready To Grow Online?</h2>
+
+    <p>
+        Get professional digital services from EarnPro.
+    </p>
+
+    <a href="https://wa.me/923019621779" class="cta-button">
+        Contact Us on WhatsApp
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 EarnPro. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>

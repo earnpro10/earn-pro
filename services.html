@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services - EarnPro</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+        }
+
+        header {
+            background: #050505;
+            border-bottom: 1px solid #292929;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffd000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 28px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ffd000;
+        }
+
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: radial-gradient(
+                circle,
+                #292000 0%,
+                #080808 45%,
+                #000 100%
+            );
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #ffd000;
+        }
+
+        .hero p {
+            color: #bbb;
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .services {
+            padding: 80px 7%;
+            text-align: center;
+            background: #080808;
+        }
+
+        .services h2 {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        .services h2 span {
+            color: #ffd000;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 280px;
+            min-height: 260px;
+            padding: 35px 25px;
+            background: #111;
+            border: 1px solid #292929;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #ffd000;
+            transform: translateY(-8px);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #ffd000;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #aaa;
+            line-height: 1.6;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 70px 20px;
+            background: #ffd000;
+            color: #000;
+        }
+
+        .contact h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            font-size: 18px;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 30px;
+            background: #000;
+            color: #ffd000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #050505;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        EarnPro
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>
+        Our <span>Services</span>
+    </h1>
+
+    <p>
+        EarnPro provides professional digital services
+        to help businesses, freelancers and individuals
+        grow their online presence.
+    </p>
+
+</section>
+
+
+<section class="services">
+
+    <h2>
+        What We <span>Offer</span>
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">🔍</div>
+
+            <h3>SEO Services</h3>
+
+            <p>
+                Improve your website visibility,
+                rankings and organic traffic with
+                professional SEO strategies.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💼</div>
+
+            <h3>Fiverr & Upwork</h3>
+
+            <p>
+                Get help with freelancing profiles,
+                gig creation, optimization and
+                online freelancing strategies.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🎨</div>
+
+            <h3>Graphic Designing</h3>
+
+            <p>
+                Get professional logos, banners,
+                thumbnails, social media graphics
+                and other creative designs.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🌐</div>
+
+            <h3>Web Designing</h3>
+
+            <p>
+                Modern and responsive website designs
+                that look great on computers,
+                tablets and mobile devices.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💻</div>
+
+            <h3>Web Development</h3>
+
+            <p>
+                Build fast, responsive and functional
+                websites for your personal or
+                business needs.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="contact">
+
+    <h2>Need Our Services?</h2>
+
+    <p>
+        Contact EarnPro and let's start your project.
+    </p>
+
+    <a
+        class="whatsapp"
+        href="https://wa.me/923019621779"
+        target="_blank">
+        Contact on WhatsApp
+    </a>
+
+</section>
+
+
+<footer>
+
+    © 2026 EarnPro. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>

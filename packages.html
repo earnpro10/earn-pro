@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Packages - EarnPro</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* HEADER */
+
+header {
+    background: #050505;
+    border-bottom: 1px solid #292929;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffd000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 28px;
+}
+
+nav a:hover {
+    color: #ffd000;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: radial-gradient(
+        circle,
+        #292000 0%,
+        #080808 45%,
+        #000 100%
+    );
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #ffd000;
+}
+
+.hero p {
+    color: #aaa;
+    font-size: 18px;
+}
+
+/* PACKAGES */
+
+.packages {
+    padding: 80px 7%;
+    background: #080808;
+    text-align: center;
+}
+
+.packages h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.packages h2 span {
+    color: #ffd000;
+}
+
+.package-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.package {
+    width: 300px;
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 10px;
+    padding: 35px 25px;
+    transition: 0.3s;
+}
+
+.package:hover {
+    transform: translateY(-8px);
+    border-color: #ffd000;
+}
+
+.package.featured {
+    border: 2px solid #ffd000;
+}
+
+.package h3 {
+    color: #ffd000;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.package ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.package li {
+    padding: 10px 0;
+    color: #ccc;
+    border-bottom: 1px solid #222;
+}
+
+.package li::before {
+    content: "✓ ";
+    color: #ffd000;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #ffd000;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #fff;
+}
+
+/* CTA */
+
+.cta {
+    text-align: center;
+    padding: 70px 20px;
+    background: #ffd000;
+    color: #000;
+}
+
+.cta h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 18px;
+}
+
+.whatsapp {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background: #000;
+    color: #ffd000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #050505;
+    text-align: center;
+    padding: 25px;
+    color: #888;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+EarnPro
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="services.html">Services</a>
+
+<a href="packages.html">Packages</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>
+Our <span>Packages</span>
+</h1>
+
+<p>
+Choose the right digital service package for your project.
+</p>
+
+</section>
+
+
+<section class="packages">
+
+<h2>
+Choose Your <span>Plan</span>
+</h2>
+
+
+<div class="package-container">
+
+
+<!-- BASIC -->
+
+<div class="package">
+
+<h3>Basic</h3>
+
+<div class="price">$25</div>
+
+<ul>
+
+<li>Basic SEO Setup</li>
+
+<li>Keyword Research</li>
+
+<li>Basic Website Audit</li>
+
+<li>5 Graphic Designs</li>
+
+<li>Email Support</li>
+
+</ul>
+
+<a
+class="button"
+href="https://wa.me/923019621779?text=Hello%20EarnPro,%20I%20am%20interested%20in%20the%20Basic%20Package."
+target="_blank">
+
+Get Started
+
+</a>
+
+</div>
+
+
+<!-- PROFESSIONAL -->
+
+<div class="package featured">
+
+<h3>Professional</h3>
+
+<div class="price">$75</div>
+
+<ul>
+
+<li>Complete SEO Setup</li>
+
+<li>Advanced Keyword Research</li>
+
+<li>On-Page SEO</li>
+
+<li>10 Graphic Designs</li>
+
+<li>Fiverr & Upwork Guidance</li>
+
+</ul>
+
+<a
+class="button"
+href="https://wa.me/923019621779?text=Hello%20EarnPro,%20I%20am%20interested%20in%20the%20Professional%20Package."
+target="_blank">
+
+Get Started
+
+</a>
+
+</div>
+
+
+<!-- PREMIUM -->
+
+<div class="package">
+
+<h3>Premium</h3>
+
+<div class="price">$150</div>
+
+<ul>
+
+<li>Advanced SEO</li>
+
+<li>Complete Website Optimization</li>
+
+<li>20 Graphic Designs</li>
+
+<li>Professional Website</li>
+
+<li>Web Development</li>
+
+</ul>
+
+<a
+class="button"
+href="https://wa.me/923019621779?text=Hello%20EarnPro,%20I%20am%20interested%20in%20the%20Premium%20Package."
+target="_blank">
+
+Get Started
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<h2>
+Ready To Start?
+</h2>
+
+<p>
+Contact EarnPro today and discuss your project.
+</p>
+
+<a
+class="whatsapp"
+href="https://wa.me/923019621779"
+target="_blank">
+
+Chat on WhatsApp
+
+</a>
+
+</section>
+
+
+<footer>
+
+© 2026 EarnPro. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
