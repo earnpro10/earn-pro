@@ -1,327 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SEO & Digital Services | EarnPro</title>
+<meta name="description" content="EarnPro offers professional SEO, freelancing, graphic design, web design and web development services to help businesses grow online.">
+<meta name="keywords" content="EarnPro services, SEO services, digital marketing, Fiverr, Upwork, graphic design, web design, web development">
+<meta name="robots" content="index,follow">
+<meta name="author" content="EarnPro">
 
-    <title>Services - EarnPro</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#080808;color:#fff;line-height:1.6}
+header{background:#111;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #292929}
+.logo{font-size:30px;font-weight:bold;color:#ffd400;text-decoration:none}
+nav{display:flex;gap:22px}
+nav a{color:#fff;text-decoration:none;font-weight:bold}
+nav a:hover{color:#ffd400}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+.hero{text-align:center;padding:80px 20px;background:radial-gradient(circle,#302800,#080808 65%)}
+.hero h1{font-size:48px}
+.hero h1 span{color:#ffd400}
+.hero p{max-width:700px;margin:15px auto;color:#ccc;font-size:18px}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #000;
-            color: #fff;
-        }
+.services{padding:70px 7%}
+.title{text-align:center;margin-bottom:40px}
+.title h2{font-size:36px}
+.title span{color:#ffd400}
+.title p{color:#aaa}
 
-        header {
-            background: #050505;
-            border-bottom: 1px solid #292929;
-            padding: 20px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#151515;border:1px solid #292929;border-radius:10px;padding:30px;transition:.3s}
+.card:hover{border-color:#ffd400;transform:translateY(-6px)}
+.icon{font-size:38px;margin-bottom:12px}
+.card h3{color:#ffd400;font-size:22px;margin-bottom:10px}
+.card p{color:#aaa}
+.card a{display:inline-block;margin-top:18px;color:#ffd400;text-decoration:none;font-weight:bold}
 
-        .logo {
-            font-size: 30px;
-            font-weight: bold;
-            color: #ffd000;
-        }
+.cta{text-align:center;background:#ffd400;color:#000;padding:60px 20px}
+.cta h2{font-size:34px}
+.cta p{margin:10px 0 20px}
+.btn{display:inline-block;background:#000;color:#ffd400;padding:13px 27px;border-radius:6px;text-decoration:none;font-weight:bold}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 28px;
-            font-size: 16px;
-        }
+footer{text-align:center;background:#050505;color:#888;padding:25px}
+footer span{color:#ffd400}
 
-        nav a:hover {
-            color: #ffd000;
-        }
-
-        .hero {
-            padding: 100px 20px;
-            text-align: center;
-            background: radial-gradient(
-                circle,
-                #292000 0%,
-                #080808 45%,
-                #000 100%
-            );
-        }
-
-        .hero h1 {
-            font-size: 55px;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: #ffd000;
-        }
-
-        .hero p {
-            color: #bbb;
-            font-size: 18px;
-            line-height: 1.7;
-            max-width: 700px;
-            margin: auto;
-        }
-
-        .services {
-            padding: 80px 7%;
-            text-align: center;
-            background: #080808;
-        }
-
-        .services h2 {
-            font-size: 40px;
-            margin-bottom: 50px;
-        }
-
-        .services h2 span {
-            color: #ffd000;
-        }
-
-        .cards {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            width: 280px;
-            min-height: 260px;
-            padding: 35px 25px;
-            background: #111;
-            border: 1px solid #292929;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            border-color: #ffd000;
-            transform: translateY(-8px);
-        }
-
-        .icon {
-            font-size: 45px;
-            margin-bottom: 20px;
-        }
-
-        .card h3 {
-            color: #ffd000;
-            font-size: 22px;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: #aaa;
-            line-height: 1.6;
-        }
-
-        .contact {
-            text-align: center;
-            padding: 70px 20px;
-            background: #ffd000;
-            color: #000;
-        }
-
-        .contact h2 {
-            font-size: 38px;
-            margin-bottom: 15px;
-        }
-
-        .contact p {
-            font-size: 18px;
-        }
-
-        .whatsapp {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 15px 30px;
-            background: #000;
-            color: #ffd000;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #050505;
-            color: #888;
-        }
-
-        @media (max-width: 768px) {
-
-            header {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            nav a {
-                margin: 0 8px;
-                font-size: 14px;
-            }
-
-            .hero h1 {
-                font-size: 40px;
-            }
-        }
-    </style>
+@media(max-width:800px){
+header{flex-direction:column;gap:15px}
+nav{gap:13px;flex-wrap:wrap;justify-content:center}
+.grid{grid-template-columns:repeat(2,1fr)}
+.hero h1{font-size:38px}
+}
+@media(max-width:550px){
+.grid{grid-template-columns:1fr}
+.hero h1{font-size:32px}
+.hero p{font-size:16px}
+}
+</style>
 </head>
 
 <body>
 
 <header>
-
-    <div class="logo">
-        EarnPro
-    </div>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="packages.html">Packages</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
+<a href="index.html" class="logo">EarnPro</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="packages.html">Packages</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 
-
 <section class="hero">
-
-    <h1>
-        Our <span>Services</span>
-    </h1>
-
-    <p>
-        EarnPro provides professional digital services
-        to help businesses, freelancers and individuals
-        grow their online presence.
-    </p>
-
+<h1>Our <span>Digital Services</span></h1>
+<p>Professional digital solutions designed to improve your online presence, attract customers and grow your business.</p>
 </section>
-
 
 <section class="services">
+<div class="title">
+<h2>What We <span>Offer</span></h2>
+<p>Choose the right service for your online business.</p>
+</div>
 
-    <h2>
-        What We <span>Offer</span>
-    </h2>
+<div class="grid">
 
-    <div class="cards">
+<div class="card">
+<div class="icon">🔍</div>
+<h3>SEO Services</h3>
+<p>Improve your website's search engine visibility with effective on-page SEO, keyword research and optimization strategies.</p>
+<a href="contact.html">Get Started →</a>
+</div>
 
-        <div class="card">
+<div class="card">
+<div class="icon">💼</div>
+<h3>Fiverr & Upwork</h3>
+<p>Get professional freelancing guidance including profile optimization, gig creation and strategies for finding clients.</p>
+<a href="contact.html">Get Started →</a>
+</div>
 
-            <div class="icon">🔍</div>
+<div class="card">
+<div class="icon">🎨</div>
+<h3>Graphic Designing</h3>
+<p>Creative logos, banners, social media graphics and business designs that help your brand stand out.</p>
+<a href="contact.html">Get Started →</a>
+</div>
 
-            <h3>SEO Services</h3>
+<div class="card">
+<div class="icon">💻</div>
+<h3>Web Designing</h3>
+<p>Modern, responsive and attractive website designs created for businesses, brands and online projects.</p>
+<a href="contact.html">Get Started →</a>
+</div>
 
-            <p>
-                Improve your website visibility,
-                rankings and organic traffic with
-                professional SEO strategies.
-            </p>
+<div class="card">
+<div class="icon">⚙️</div>
+<h3>Web Development</h3>
+<p>Functional and responsive websites built with clean HTML, CSS and modern web development techniques.</p>
+<a href="contact.html">Get Started →</a>
+</div>
 
-        </div>
+<div class="card">
+<div class="icon">📈</div>
+<h3>Digital Growth</h3>
+<p>Practical digital solutions that help businesses establish a stronger online presence and reach more customers.</p>
+<a href="contact.html">Get Started →</a>
+</div>
 
-
-        <div class="card">
-
-            <div class="icon">💼</div>
-
-            <h3>Fiverr & Upwork</h3>
-
-            <p>
-                Get help with freelancing profiles,
-                gig creation, optimization and
-                online freelancing strategies.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">🎨</div>
-
-            <h3>Graphic Designing</h3>
-
-            <p>
-                Get professional logos, banners,
-                thumbnails, social media graphics
-                and other creative designs.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">🌐</div>
-
-            <h3>Web Designing</h3>
-
-            <p>
-                Modern and responsive website designs
-                that look great on computers,
-                tablets and mobile devices.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">💻</div>
-
-            <h3>Web Development</h3>
-
-            <p>
-                Build fast, responsive and functional
-                websites for your personal or
-                business needs.
-            </p>
-
-        </div>
-
-
-    </div>
-
+</div>
 </section>
 
-
-<section class="contact">
-
-    <h2>Need Our Services?</h2>
-
-    <p>
-        Contact EarnPro and let's start your project.
-    </p>
-
-    <a
-        class="whatsapp"
-        href="https://wa.me/923019621779"
-        target="_blank">
-        Contact on WhatsApp
-    </a>
-
+<section class="cta">
+<h2>Need A Digital Service?</h2>
+<p>Let's discuss your project and find the right solution for you.</p>
+<a href="https://wa.me/923019621779" target="_blank" class="btn">Contact on WhatsApp</a>
 </section>
-
 
 <footer>
-
-    © 2026 EarnPro. All Rights Reserved.
-
+© 2026 <span>EarnPro</span> - All Rights Reserved.
 </footer>
 
 </body>
