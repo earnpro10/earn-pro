@@ -2,221 +2,257 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Packages - EarnPro</title>
+<title>EarnPro Packages | SEO & Digital Services</title>
+
+<meta name="description" content="Explore affordable EarnPro packages for SEO, freelancing, graphic design, web design and web development services.">
+<meta name="keywords" content="EarnPro packages, SEO packages, digital services packages, web design packages, graphic design packages, freelancing services">
+<meta name="robots" content="index,follow">
+<meta name="author" content="EarnPro">
 
 <style>
+*{box-sizing:border-box;margin:0;padding:0}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+font-family:Arial,sans-serif;
+background:#080808;
+color:#fff;
+line-height:1.6
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #000;
-    color: #fff;
+header{
+background:#111;
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #292929
 }
 
-/* HEADER */
-
-header {
-    background: #050505;
-    border-bottom: 1px solid #292929;
-    padding: 20px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#ffd400;
+text-decoration:none
 }
 
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffd000;
+nav{
+display:flex;
+gap:22px
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 28px;
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:bold
 }
 
-nav a:hover {
-    color: #ffd000;
+nav a:hover{
+color:#ffd400
 }
 
-/* HERO */
-
-.hero {
-    text-align: center;
-    padding: 90px 20px;
-    background: radial-gradient(
-        circle,
-        #292000 0%,
-        #080808 45%,
-        #000 100%
-    );
+.hero{
+text-align:center;
+padding:75px 20px;
+background:radial-gradient(circle,#302800,#080808 65%)
 }
 
-.hero h1 {
-    font-size: 55px;
-    margin-bottom: 20px;
+.hero h1{
+font-size:48px
 }
 
-.hero h1 span {
-    color: #ffd000;
+.hero h1 span{
+color:#ffd400
 }
 
-.hero p {
-    color: #aaa;
-    font-size: 18px;
+.hero p{
+max-width:700px;
+margin:15px auto;
+color:#ccc;
+font-size:18px
 }
 
-/* PACKAGES */
-
-.packages {
-    padding: 80px 7%;
-    background: #080808;
-    text-align: center;
+.packages{
+padding:70px 7%
 }
 
-.packages h2 {
-    font-size: 40px;
-    margin-bottom: 50px;
+.title{
+text-align:center;
+margin-bottom:45px
 }
 
-.packages h2 span {
-    color: #ffd000;
+.title h2{
+font-size:36px
 }
 
-.package-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
+.title span{
+color:#ffd400
 }
 
-.package {
-    width: 300px;
-    background: #111;
-    border: 1px solid #292929;
-    border-radius: 10px;
-    padding: 35px 25px;
-    transition: 0.3s;
+.title p{
+color:#aaa
 }
 
-.package:hover {
-    transform: translateY(-8px);
-    border-color: #ffd000;
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+max-width:1100px;
+margin:auto
 }
 
-.package.featured {
-    border: 2px solid #ffd000;
+.card{
+background:#151515;
+border:1px solid #292929;
+border-radius:12px;
+padding:35px 25px;
+text-align:center;
+transition:.3s
 }
 
-.package h3 {
-    color: #ffd000;
-    font-size: 25px;
-    margin-bottom: 20px;
+.card:hover{
+transform:translateY(-8px);
+border-color:#ffd400
 }
 
-.price {
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: 25px;
+.card.featured{
+border:2px solid #ffd400;
+transform:scale(1.03)
 }
 
-.package ul {
-    list-style: none;
-    text-align: left;
-    margin-bottom: 30px;
+.badge{
+display:inline-block;
+background:#ffd400;
+color:#000;
+padding:5px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin-bottom:12px
 }
 
-.package li {
-    padding: 10px 0;
-    color: #ccc;
-    border-bottom: 1px solid #222;
+.card h3{
+font-size:25px;
+color:#ffd400;
+margin-bottom:10px
 }
 
-.package li::before {
-    content: "✓ ";
-    color: #ffd000;
-    font-weight: bold;
+.price{
+font-size:42px;
+font-weight:bold;
+margin:15px 0
 }
 
-.button {
-    display: inline-block;
-    padding: 14px 28px;
-    background: #ffd000;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+.price small{
+font-size:15px;
+color:#aaa
 }
 
-.button:hover {
-    background: #fff;
+.card ul{
+list-style:none;
+text-align:left;
+margin:20px 0
 }
 
-/* CTA */
-
-.cta {
-    text-align: center;
-    padding: 70px 20px;
-    background: #ffd000;
-    color: #000;
+.card li{
+padding:8px 0;
+border-bottom:1px solid #252525;
+color:#ccc
 }
 
-.cta h2 {
-    font-size: 38px;
-    margin-bottom: 15px;
+.card li::before{
+content:"✓ ";
+color:#ffd400;
+font-weight:bold
 }
 
-.cta p {
-    font-size: 18px;
+.btn{
+display:block;
+background:#ffd400;
+color:#000;
+padding:13px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+margin-top:20px
 }
 
-.whatsapp {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 15px 30px;
-    background: #000;
-    color: #ffd000;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+.btn:hover{
+background:#fff
 }
 
-/* FOOTER */
-
-footer {
-    background: #050505;
-    text-align: center;
-    padding: 25px;
-    color: #888;
+.cta{
+text-align:center;
+background:#ffd400;
+color:#000;
+padding:60px 20px;
+margin-top:20px
 }
 
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    nav a {
-        margin: 0 7px;
-        font-size: 14px;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
+.cta h2{
+font-size:34px
 }
 
+.cta p{
+margin:10px 0 20px
+}
+
+.cta a{
+display:inline-block;
+background:#000;
+color:#ffd400;
+padding:13px 28px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold
+}
+
+footer{
+text-align:center;
+background:#050505;
+color:#888;
+padding:25px
+}
+
+footer span{
+color:#ffd400
+}
+
+@media(max-width:850px){
+header{
+flex-direction:column;
+gap:15px
+}
+
+nav{
+gap:13px;
+flex-wrap:wrap;
+justify-content:center
+}
+
+.grid{
+grid-template-columns:1fr 1fr
+}
+}
+
+@media(max-width:600px){
+.grid{
+grid-template-columns:1fr
+}
+
+.card.featured{
+transform:none
+}
+
+.hero h1{
+font-size:35px
+}
+
+.hero p{
+font-size:16px
+}
+}
 </style>
 </head>
 
@@ -224,180 +260,138 @@ footer {
 
 <header>
 
-<div class="logo">
-EarnPro
-</div>
+<a href="index.html" class="logo">EarnPro</a>
 
 <nav>
-
 <a href="index.html">Home</a>
-
 <a href="services.html">Services</a>
-
 <a href="packages.html">Packages</a>
-
 <a href="contact.html">Contact</a>
-
 </nav>
 
 </header>
 
-
 <section class="hero">
 
-<h1>
-Our <span>Packages</span>
-</h1>
+<h1>Our <span>Packages</span></h1>
 
 <p>
-Choose the right digital service package for your project.
+Choose an affordable digital service package designed to help
+your business, brand or online project grow.
 </p>
 
 </section>
-
 
 <section class="packages">
 
-<h2>
-Choose Your <span>Plan</span>
-</h2>
+<div class="title">
+<h2>Choose Your <span>Plan</span></h2>
+<p>Simple and affordable solutions for your digital needs.</p>
+</div>
 
-
-<div class="package-container">
-
+<div class="grid">
 
 <!-- BASIC -->
 
-<div class="package">
+<div class="card">
 
 <h3>Basic</h3>
 
-<div class="price">$25</div>
+<div class="price">
+$25 <small>/ project</small>
+</div>
 
 <ul>
-
 <li>Basic SEO Setup</li>
-
 <li>Keyword Research</li>
-
-<li>Basic Website Audit</li>
-
-<li>5 Graphic Designs</li>
-
-<li>Email Support</li>
-
+<li>Basic Website Optimization</li>
+<li>1 Graphic Design</li>
+<li>Basic Support</li>
 </ul>
 
-<a
-class="button"
-href="https://wa.me/923019621779?text=Hello%20EarnPro,%20I%20am%20interested%20in%20the%20Basic%20Package."
-target="_blank">
-
-Get Started
-
+<a class="btn"
+href="https://wa.me/923019621779?text=Hello%20EarnPro%2C%20I%20am%20interested%20in%20the%20Basic%20Package.">
+Choose Basic
 </a>
 
 </div>
-
 
 <!-- PROFESSIONAL -->
 
-<div class="package featured">
+<div class="card featured">
+
+<div class="badge">MOST POPULAR</div>
 
 <h3>Professional</h3>
 
-<div class="price">$75</div>
+<div class="price">
+$75 <small>/ project</small>
+</div>
 
 <ul>
-
 <li>Complete SEO Setup</li>
-
-<li>Advanced Keyword Research</li>
-
+<li>Keyword Research</li>
 <li>On-Page SEO</li>
-
-<li>10 Graphic Designs</li>
-
-<li>Fiverr & Upwork Guidance</li>
-
+<li>3 Graphic Designs</li>
+<li>Professional Website Design</li>
+<li>Priority Support</li>
 </ul>
 
-<a
-class="button"
-href="https://wa.me/923019621779?text=Hello%20EarnPro,%20I%20am%20interested%20in%20the%20Professional%20Package."
-target="_blank">
-
-Get Started
-
+<a class="btn"
+href="https://wa.me/923019621779?text=Hello%20EarnPro%2C%20I%20am%20interested%20in%20the%20Professional%20Package.">
+Choose Professional
 </a>
 
 </div>
-
 
 <!-- PREMIUM -->
 
-<div class="package">
+<div class="card">
 
 <h3>Premium</h3>
 
-<div class="price">$150</div>
+<div class="price">
+$150 <small>/ project</small>
+</div>
 
 <ul>
-
 <li>Advanced SEO</li>
-
-<li>Complete Website Optimization</li>
-
-<li>20 Graphic Designs</li>
-
-<li>Professional Website</li>
-
+<li>Keyword Research</li>
+<li>On-Page Optimization</li>
+<li>5 Graphic Designs</li>
+<li>Complete Website Design</li>
 <li>Web Development</li>
-
+<li>Priority Support</li>
 </ul>
 
-<a
-class="button"
-href="https://wa.me/923019621779?text=Hello%20EarnPro,%20I%20am%20interested%20in%20the%20Premium%20Package."
-target="_blank">
-
-Get Started
-
+<a class="btn"
+href="https://wa.me/923019621779?text=Hello%20EarnPro%2C%20I%20am%20interested%20in%20the%20Premium%20Package.">
+Choose Premium
 </a>
 
 </div>
 
-
 </div>
 
 </section>
-
 
 <section class="cta">
 
-<h2>
-Ready To Start?
-</h2>
+<h2>Need A Custom Package?</h2>
 
 <p>
-Contact EarnPro today and discuss your project.
+Tell us what you need and we can discuss a package for your project.
 </p>
 
-<a
-class="whatsapp"
-href="https://wa.me/923019621779"
-target="_blank">
-
-Chat on WhatsApp
-
+<a href="https://wa.me/923019621779?text=Hello%20EarnPro%2C%20I%20want%20a%20custom%20package.">
+Contact On WhatsApp
 </a>
 
 </section>
 
-
 <footer>
 
-© 2026 EarnPro. All Rights Reserved.
+© 2026 <span>EarnPro</span> - All Rights Reserved.
 
 </footer>
 
