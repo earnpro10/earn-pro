@@ -1,377 +1,292 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Contact - EarnPro</title>
+<title>Contact EarnPro | SEO & Digital Services</title>
+
+<meta name="description" content="Contact EarnPro for professional SEO, freelancing, graphic design, web design and web development services.">
+<meta name="keywords" content="contact EarnPro, SEO services, digital services, web design, graphic design, web development">
+<meta name="robots" content="index,follow">
+<meta name="author" content="EarnPro">
 
 <style>
+*{box-sizing:border-box;margin:0;padding:0}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+font-family:Arial,sans-serif;
+background:#080808;
+color:#fff;
+line-height:1.6
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #000;
-    color: #fff;
+header{
+background:#111;
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #292929
 }
 
-/* HEADER */
-
-header {
-    background: #050505;
-    border-bottom: 1px solid #292929;
-    padding: 20px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#ffd400;
+text-decoration:none
 }
 
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffd000;
+nav{
+display:flex;
+gap:22px
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 28px;
-    font-size: 16px;
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:bold
 }
 
-nav a:hover {
-    color: #ffd000;
+nav a:hover{
+color:#ffd400
 }
 
-/* HERO */
-
-.hero {
-    text-align: center;
-    padding: 90px 20px;
-    background: radial-gradient(
-        circle,
-        #292000 0%,
-        #080808 45%,
-        #000 100%
-    );
+.hero{
+text-align:center;
+padding:75px 20px;
+background:radial-gradient(circle,#302800,#080808 65%)
 }
 
-.hero h1 {
-    font-size: 55px;
-    margin-bottom: 20px;
+.hero h1{
+font-size:48px
 }
 
-.hero h1 span {
-    color: #ffd000;
+.hero h1 span{
+color:#ffd400
 }
 
-.hero p {
-    color: #aaa;
-    font-size: 18px;
-    line-height: 1.6;
+.hero p{
+max-width:700px;
+margin:15px auto;
+color:#ccc;
+font-size:18px
 }
 
-/* CONTACT SECTION */
-
-.contact {
-    padding: 80px 7%;
-    background: #080808;
+.contact{
+padding:70px 7%;
+display:grid;
+grid-template-columns:1fr 1.4fr;
+gap:40px;
+max-width:1100px;
+margin:auto
 }
 
-.contact-container {
-    max-width: 1050px;
-    margin: auto;
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+.info{
+background:#151515;
+border:1px solid #292929;
+padding:35px;
+border-radius:12px
 }
 
-/* LEFT SIDE */
-
-.contact-info {
-    flex: 1;
-    min-width: 280px;
+.info h2{
+color:#ffd400;
+margin-bottom:20px
 }
 
-.contact-info h2 {
-    font-size: 34px;
-    margin-bottom: 20px;
+.info p{
+color:#bbb;
+margin:15px 0
 }
 
-.contact-info h2 span {
-    color: #ffd000;
+.info strong{
+color:#fff
 }
 
-.contact-info p {
-    color: #aaa;
-    line-height: 1.7;
-    margin-bottom: 30px;
+.form{
+background:#151515;
+border:1px solid #292929;
+padding:35px;
+border-radius:12px
 }
 
-.info-box {
-    background: #111;
-    border: 1px solid #292929;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 8px;
+.form h2{
+color:#ffd400;
+margin-bottom:20px
 }
 
-.info-box strong {
-    display: block;
-    color: #ffd000;
-    margin-bottom: 8px;
+input,textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+background:#0b0b0b;
+border:1px solid #333;
+border-radius:6px;
+color:#fff;
+font-size:15px
 }
 
-.info-box a {
-    color: #fff;
-    text-decoration: none;
+input:focus,textarea:focus{
+outline:none;
+border-color:#ffd400
 }
 
-.info-box a:hover {
-    color: #ffd000;
+textarea{
+height:150px;
+resize:vertical
 }
 
-/* FORM */
-
-.contact-form {
-    flex: 1;
-    min-width: 300px;
-    background: #111;
-    border: 1px solid #292929;
-    padding: 35px;
-    border-radius: 10px;
+button{
+width:100%;
+padding:14px;
+background:#ffd400;
+color:#000;
+border:0;
+border-radius:6px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer
 }
 
-.contact-form h2 {
-    color: #ffd000;
-    margin-bottom: 25px;
-    font-size: 26px;
+button:hover{
+background:#fff
 }
 
-input,
-textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 16px;
-    background: #050505;
-    border: 1px solid #333;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 15px;
-    outline: none;
+.whatsapp{
+display:inline-block;
+margin-top:15px;
+background:#ffd400;
+color:#000;
+padding:12px 22px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold
 }
 
-input:focus,
-textarea:focus {
-    border-color: #ffd000;
+.cta{
+text-align:center;
+background:#ffd400;
+color:#000;
+padding:55px 20px
 }
 
-textarea {
-    height: 150px;
-    resize: vertical;
+.cta h2{
+font-size:34px
 }
 
-button {
-    width: 100%;
-    padding: 16px;
-    background: #ffd000;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+.cta p{
+margin:10px 0 20px
 }
 
-button:hover {
-    background: #fff;
+.cta a{
+display:inline-block;
+background:#000;
+color:#ffd400;
+padding:13px 28px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold
 }
 
-/* WHATSAPP */
-
-.whatsapp-section {
-    text-align: center;
-    padding: 70px 20px;
-    background: #ffd000;
-    color: #000;
+footer{
+text-align:center;
+background:#050505;
+color:#888;
+padding:25px
 }
 
-.whatsapp-section h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
+footer span{
+color:#ffd400
 }
 
-.whatsapp-section p {
-    font-size: 18px;
+@media(max-width:750px){
+header{
+flex-direction:column;
+gap:15px
 }
 
-.whatsapp {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 15px 35px;
-    background: #000;
-    color: #ffd000;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+nav{
+gap:13px;
+flex-wrap:wrap;
+justify-content:center
 }
 
-.whatsapp:hover {
-    background: #222;
+.contact{
+grid-template-columns:1fr;
+padding:50px 5%
 }
 
-/* FOOTER */
-
-footer {
-    background: #050505;
-    text-align: center;
-    padding: 25px;
-    color: #888;
+.hero h1{
+font-size:35px
 }
 
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    nav a {
-        margin: 0 7px;
-        font-size: 14px;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .contact {
-        padding: 60px 20px;
-    }
-
+.hero p{
+font-size:16px
 }
-
+}
 </style>
-
 </head>
 
 <body>
 
-
-<!-- HEADER -->
-
 <header>
 
-<div class="logo">
-EarnPro
-</div>
+<a href="index.html" class="logo">EarnPro</a>
 
 <nav>
-
 <a href="index.html">Home</a>
-
 <a href="services.html">Services</a>
-
 <a href="packages.html">Packages</a>
-
 <a href="contact.html">Contact</a>
-
 </nav>
 
 </header>
 
-
-<!-- HERO -->
-
 <section class="hero">
 
-<h1>
-Contact <span>EarnPro</span>
-</h1>
+<h1>Contact <span>EarnPro</span></h1>
 
 <p>
-Have a project in mind? Send us a message and
-we will get back to you.
+Have a project or need a digital service?
+Get in touch with EarnPro today.
 </p>
 
 </section>
 
-
-<!-- CONTACT -->
-
 <section class="contact">
 
-<div class="contact-container">
+<div class="info">
 
-
-<!-- CONTACT INFORMATION -->
-
-<div class="contact-info">
-
-<h2>
-Let's <span>Talk</span>
-</h2>
+<h2>Get In Touch</h2>
 
 <p>
-Whether you need SEO, Fiverr & Upwork freelancing,
-graphic designing, web designing or web development,
-EarnPro is ready to help.
+<strong>Business:</strong><br>
+EarnPro Digital Services
 </p>
 
+<p>
+<strong>WhatsApp:</strong><br>
++92 301 9621779
+</p>
 
-<div class="info-box">
-
-<strong>WhatsApp</strong>
+<p>
+<strong>Services:</strong><br>
+SEO, Freelancing, Graphic Design,
+Web Design & Web Development
+</p>
 
 <a
+class="whatsapp"
 href="https://wa.me/923019621779"
 target="_blank">
-
-+92 301 9621779
-
+💬 WhatsApp Us
 </a>
 
 </div>
 
+<div class="form">
 
-<div class="info-box">
-
-<strong>Services</strong>
-
-SEO • Freelancing • Graphic Design •
-Web Design • Web Development
-
-</div>
-
-
-<div class="info-box">
-
-<strong>Business</strong>
-
-EarnPro Digital Services
-
-</div>
-
-</div>
-
-
-<!-- GMAIL CONTACT FORM -->
-
-<div class="contact-form">
-
-<h2>
-Send Us a Message
-</h2>
+<h2>Send Us A Message</h2>
 
 <form id="contactForm">
 
@@ -389,7 +304,7 @@ required>
 
 <textarea
 id="visitorMessage"
-placeholder="Tell us about your project..."
+placeholder="Write your message..."
 required></textarea>
 
 <button type="submit">
@@ -400,102 +315,62 @@ Send Message
 
 </div>
 
-
-</div>
-
 </section>
 
+<section class="cta">
 
-<!-- WHATSAPP -->
-
-<section class="whatsapp-section">
-
-<h2>
-Chat With EarnPro
-</h2>
+<h2>Let's Work Together</h2>
 
 <p>
-For a quick response, contact us directly on WhatsApp.
+Start your digital project with EarnPro today.
 </p>
 
 <a
-class="whatsapp"
-href="https://wa.me/923019621779"
-target="_blank">
-
-Open WhatsApp
-
+href="https://wa.me/923019621779?text=Hello%20EarnPro%2C%20I%20want%20to%20discuss%20a%20project.">
+Contact On WhatsApp
 </a>
 
 </section>
 
-
-<!-- FOOTER -->
-
 <footer>
 
-© 2026 EarnPro. All Rights Reserved.
+© 2026 <span>EarnPro</span> - All Rights Reserved.
 
 </footer>
 
-
-<!-- GMAIL SCRIPT -->
-
 <script>
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
+document.getElementById("contactForm").addEventListener("submit",function(e){
 
-    event.preventDefault();
+e.preventDefault();
 
-    /* YOUR GMAIL ADDRESS */
+var name=document.getElementById("visitorName").value;
+var email=document.getElementById("visitorEmail").value;
+var message=document.getElementById("visitorMessage").value;
 
-    var yourEmail = "noah06042007@gmail.com";
+var yourEmail="noah06042007gmail.com";
 
+var subject="New Message From EarnPro Website";
 
-    /* VISITOR INFORMATION */
+var body=
+"Hello EarnPro,\n\n"+
+"New message received from your website.\n\n"+
+"Name: "+name+"\n"+
+"Visitor Email: "+email+"\n\n"+
+"Message:\n"+message+"\n\n"+
+"Thank you.";
 
-    var name = document.getElementById("visitorName").value;
+var gmailURL=
+"https://mail.google.com/mail/?view=cm&fs=1"+
+"&to="+encodeURIComponent(yourEmail)+
+"&su="+encodeURIComponent(subject)+
+"&body="+encodeURIComponent(body);
 
-    var email = document.getElementById("visitorEmail").value;
-
-    var message = document.getElementById("visitorMessage").value;
-
-
-    /* EMAIL SUBJECT */
-
-    var subject = "New Message From EarnPro Website";
-
-
-    /* EMAIL BODY */
-
-    var body =
-        "Hello EarnPro,%0D%0A%0D%0A" +
-        "New message received from your website.%0D%0A%0D%0A" +
-        "Name: " + encodeURIComponent(name) + "%0D%0A" +
-        "Visitor Email: " + encodeURIComponent(email) + "%0D%0A%0D%0A" +
-        "Message:%0D%0A" +
-        encodeURIComponent(message) +
-        "%0D%0A%0D%0A" +
-        "Thank you.";
-
-
-    /* OPEN GMAIL COMPOSE */
-
-    var gmailURL =
-        "https://mail.google.com/mail/?view=cm&fs=1" +
-        "&to=" + encodeURIComponent(yourEmail) +
-        "&su=" + encodeURIComponent(subject) +
-        "&body=" + body;
-
-
-    window.open(gmailURL, "_blank");
+window.open(gmailURL,"_blank");
 
 });
 
 </script>
 
-
 </body>
-
 </html>
-```
